@@ -29,7 +29,7 @@ export const Error = () => {
     };
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-14 h-screen">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-14 h-full">
             {/* Left Section - Input */}
             <div className="flex flex-col space-y-6 p-4 border rounded-lg bg-white shadow-md overflow-y-auto">
                 <h3 className=" text-2xl font-bold text-gray-700">Paste your Error Here</h3>
