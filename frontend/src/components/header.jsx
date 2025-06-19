@@ -1,11 +1,12 @@
-import React from "react";
-import { Link } from "react-router-dom";
 
+import { Link} from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 export const Header = () => {
+  const navigate = useNavigate();
   return (
     <div className="p-1 mx-auto text-center">
       <nav className="bg-gradient-to-r from-purple-600 to-blue-500 text-white p-5 flex flex-wrap justify-between items-center shadow-lg mb-8">
-        <h1 className="text-3xl font-extrabold tracking-wide drop-shadow-md">
+        <h1 className="text-3xl font-extrabold tracking-wide drop-shadow-md" onClick={()=> navigate('/')}>
           ERRORLOGIX
         </h1>
         <div className="space-x-6 text-lg">
